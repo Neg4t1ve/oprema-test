@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tokensContainer {
+  display: grid;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media (max-width: 1024.99px) {
+  .tokensContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640.99px) {
+  .tokensContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

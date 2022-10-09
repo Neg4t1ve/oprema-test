@@ -1,0 +1,37 @@
+@use "../../../styles/variables" as *;
+
+.token {
+  padding: 1rem;
+  background: $darker;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .name {
+    font-size: 5rem;
+    color: $heading;
+    font-weight: bold;
+  }
+
+  .currency {
+    font-size: 3rem;
+    color: $text;
+    span {
+      color: #000;
+    }
+  }
+}
+
+@media (max-width: 1440.99px) {
+  .token {
+    padding: 0.75rem;
+
+    .name {
+      font-size: 3.5rem;
+    }
+
+    .currency {
+      font-size: 2rem;
+    }
+  }
+}

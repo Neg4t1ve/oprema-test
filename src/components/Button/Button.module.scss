@@ -1,0 +1,18 @@
+@use "../../../styles/variables" as *;
+
+.button {
+  padding: 3rem;
+  background: $light;
+  border-radius: 10px;
+  color: $text;
+  font-size: 2rem;
+  transition: background ease 0.5s 0s;
+  &:hover {
+    background-color: $darker;
+    transition: background ease 0.5s 0s;
+  }
+  &:active {
+    background-color: $heading;
+    color: $darker;
+  }
+}
